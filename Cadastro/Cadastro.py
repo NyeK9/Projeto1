@@ -1,11 +1,11 @@
 class Pessoa:
-    def __init__(self, nome, idade, email):
+    def __init__(self, nome, idade, senha):
         self.nome = nome
         self.idade = idade
-        self.email = email
+        self.senha = senha
 
     def __str__(self):
-        return f"Nome: {self.nome} | Idade: {self.idade} | Email: {self.email}"
+        return f"Nome: {self.nome} | Idade: {self.idade} | Email: {self.senha}"
 
 
 class SistemaCadastro:
@@ -55,9 +55,9 @@ while True:
     if opcao == "1":
         nome = input("Nome: ")
         idade = int(input("Idade: "))
-        email = input("Email: ")
+        senha = input("Senha: ")
 
-        pessoa = Pessoa(nome, idade, email)
+        pessoa = Pessoa(nome, idade, senha)
         sistema.cadastrar(pessoa)
 
     elif opcao == "2":
