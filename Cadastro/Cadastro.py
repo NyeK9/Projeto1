@@ -5,7 +5,7 @@ class Pessoa:
         self.senha = senha
 
     def __str__(self):
-        return f"Nome: {self.nome} | Idade: {self.idade} | Email: {self.senha}"
+        return f"Nome: {self.nome} | Idade: {self.idade} | Senha: {self.senha}"
 
 
 class SistemaCadastro:
